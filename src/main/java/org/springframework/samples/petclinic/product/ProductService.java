@@ -36,8 +36,11 @@ public class ProductService {
 	 }
 	 
 
-    public void save(Product p){
+  /*  public void save(Product p){
         productRepository.save(p);       
+    } */
+    public Product save(Product p){
+        return productRepository.save(p);       
     }
 
     
