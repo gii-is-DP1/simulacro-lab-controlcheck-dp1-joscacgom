@@ -30,6 +30,7 @@ public class Product {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "id")
     Integer id;
+	// o extends de BaseEntity
 	@NotBlank
 	@Size(min=3,max=50)
 	@Column(name = "name")

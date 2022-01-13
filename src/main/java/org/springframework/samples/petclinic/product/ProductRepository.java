@@ -10,7 +10,7 @@ import org.springframework.data.repository.query.Param;
 
 
 
-public interface ProductRepository extends CrudRepository<Product, String> {
+public interface ProductRepository extends CrudRepository<Product, Integer> {
     List<Product> findAll();
     @Query("SELECT productType FROM ProductType productType")
     public List<ProductType> findAllProductTypes();

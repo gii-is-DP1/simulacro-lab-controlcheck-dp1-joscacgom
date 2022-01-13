@@ -41,7 +41,7 @@ public class ProductController {
 				return VIEWS_PRODUCT_CREATE_OR_UPDATE_FORM;
 			}
 			else {
-				//creating owner, user and authorities
+				//creating card
 				this.productService.save(p);
 				modelMap.addAttribute("message","Product succesfully saved!");
 				
